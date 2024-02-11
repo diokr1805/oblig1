@@ -8,29 +8,30 @@
 </head>
 <body>
     <h1>Bestilling av kinobilleter</h1>
-    <form action="" onsubmit="return validering()">
+    <form action="" onsubmit="validering()">
         <label>Velg film : </label>
-        <select id="velgFilmer" name="filmer">
+        <select id="velgFilm">
             <option value="" selected>Velg her</option>
             <option value="theShawshankRedemption">The Shawshank Redemption</option>
             <option value="theDarkKnight">The Dark Knight</option>
             <option value="pulpFiction">Pulp Fiction</option>
             <option value="theGodFather">The Godfather</option>
         </select>
-    <br><br>
-    <label>Antall billeter : </label>
-    <input type="text"><br><br>
-    <label>Fornavn</label>
-    <input><br><br>
-    <label>Etternavn</label>
-    <input><br><br>
-    <label>Telefonnr</label>
-    <input><br><br>
-    <label>Epost</label>
-    <input><br><br>
-    <button type="submit">Kjøp</button>
+        <br><br>
+        <label>Antall billetter : </label>
+        <input type=text" id="antallBilletter"><br><br>
+        <label>Fornavn</label>
+        <input type="text" id="oppgiFornavn"><br><br>
+        <label>Etternavn</label>
+        <input type="text" id="oppgiEtternavn"><br><br>
+        <label>Telefonnr</label>
+        <input type="text" id="oppgiTelefonnr"><br><br>
+        <label>E-post</label>
+        <input type="text" id="oppgiEpost"><br><br>
+        <button type="submit" >Kjøp</button>
     </form>
     <h2>Alle billeter</h2>
+    <p id="alleBilletter"></p>
     <button>Slett alle billetter</button>
 </body>
 </html>
