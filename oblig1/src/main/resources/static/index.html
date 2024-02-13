@@ -10,7 +10,7 @@
     <h1>Bestilling av kinobilleter</h1>
     <form>
         <label for="velgEnFilm">Velg film : </label>
-        <select id="velgEnFilm">
+        <select id="velgEnFilm" autocomplete="off">
             <option value="" >Velg her</option>
             <option value="The Shawshank Redemption">The Shawshank Redemption</option>
             <option value="The Dark Knight">The Dark Knight</option>
@@ -18,20 +18,20 @@
             <option value="The Godfather">The Godfather</option>
         </select>
         <br><br>
-        <label>Antall billetter : </label>
-        <input type="text" id="antallBilletter"><br><br>
-        <label>Fornavn</label>
-        <input type="text" id="oppgiFornavn"><br><br>
-        <label>Etternavn</label>
-        <input type="text" id="oppgiEtternavn"><br><br>
-        <label>Telefonnr</label>
-        <input type="text" id="oppgiTelefonnr"><br><br>
-        <label>E-post</label>
-        <input type="text" id="oppgiEpost"><br><br>
+        <label for="antallBilletter">Antall billetter : </label>
+        <input type="text" id="antallBilletter" autocomplete="off"><br><br>
+        <label for="oppgiFornavn">Fornavn</label>
+        <input type="text" id="oppgiFornavn" autocomplete="off"><br><br>
+        <label for="oppgiEtternavn">Etternavn</label>
+        <input type="text" id="oppgiEtternavn" autocomplete="off"><br><br>
+        <label for="oppgiTelefonnr">Telefonnr</label>
+        <input type="text" id="oppgiTelefonnr" autocomplete="off"><br><br>
+        <label for="oppgiEpost">E-post</label>
+        <input type="text" id="oppgiEpost" autocomplete="off"><br><br>
         <button type="button" onclick="validering()">Kjøp</button>
     </form>
     <h2>Alle billeter</h2>
     <p id="alleBilletter"></p>
-    <button>Slett alle billetter</button>
+    <button type="button" onclick="slettBilletter()">Slett alle billetter</button>
 </body>
 </html>
