@@ -9,8 +9,8 @@
 <body>
     <h1>Bestilling av kinobilleter</h1>
     <form>
-        <label for="velgEnFilm">Velg film : </label>
-        <select id="velgEnFilm" autocomplete="off">
+        <label for="velgEnFilm" style="display: inline-block; width: 100px; text-align: left;">Velg film</label>
+        <select id="velgEnFilm" autocomplete="off" style="width: 190px;">
             <option value="" >Velg her</option>
             <option value="The Shawshank Redemption">The Shawshank Redemption</option>
             <option value="The Dark Knight">The Dark Knight</option>
@@ -18,17 +18,22 @@
             <option value="The Godfather">The Godfather</option>
         </select>
         <br><br>
-        <label for="antallBilletter">Antall billetter : </label>
-        <input type="text" id="antallBilletter" autocomplete="off"><br><br>
-        <label for="oppgiFornavn">Fornavn</label>
+        <label for="antallBilletter" style="display: inline-block; width: 100px; text-align: left;">Antall billetter</label>
+        <input type="text" id="antallBilletter" autocomplete="off" style="width: 30px;"><br><br>
+
+        <label for="oppgiFornavn" style="display: inline-block; width: 100px; text-align: left;">Fornavn</label>
         <input type="text" id="oppgiFornavn" autocomplete="off"><br><br>
-        <label for="oppgiEtternavn">Etternavn</label>
+
+        <label for="oppgiEtternavn" style="display: inline-block; width: 100px; text-align: left;">Etternavn</label>
         <input type="text" id="oppgiEtternavn" autocomplete="off"><br><br>
-        <label for="oppgiTelefonnr">Telefonnr</label>
+
+        <label for="oppgiTelefonnr" style="display: inline-block; width: 100px; text-align: left;">Telefonnr</label>
         <input type="text" id="oppgiTelefonnr" autocomplete="off"><br><br>
-        <label for="oppgiEpost">E-post</label>
+
+        <label for="oppgiEpost" style="display: inline-block; width: 100px; text-align: left;">E-post</label>
         <input type="text" id="oppgiEpost" autocomplete="off"><br><br>
-        <button type="button" onclick="validering()">Kjøp</button>
+
+        <button type="button" onclick="validering()" >Kjøp</button>
     </form>
     <h2>Alle billeter</h2>
     <p id="alleBilletter"></p>
